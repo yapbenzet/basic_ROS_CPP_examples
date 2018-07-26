@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>gps_sim_project</name>
+  <version>1.1.1</version>
+  <description>The gps_sim_project package</description>
+  <maintainer email="abc@todo.todo">abc</maintainer>
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>roscpp</depend>
+  <depend>tf</depend>
+  <depend>visualizarion_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>ugv_course_libs</depend>
+
+  <export>
+  </export>
+</package>

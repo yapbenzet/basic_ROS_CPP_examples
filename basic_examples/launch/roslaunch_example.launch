@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <node pkg="basic_examples" type="timer_example" name="timer_example_1" output="screen" />
+
+  <node pkg="basic_examples" type="timer_example" name="timer_example_2" output="screen" />
+
+  <node pkg="basic_examples" type="namespace_example" name="namespace_example" />
+
+</launch>

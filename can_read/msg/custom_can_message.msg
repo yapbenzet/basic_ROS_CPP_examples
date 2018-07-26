@@ -1,0 +1,10 @@
+int64 message_id
+int64 message_length
+int64 byte0
+int64 byte1
+int64 byte2
+int64 byte3
+int64 byte4
+int64 byte5
+int64 byte6
+int64 byte7

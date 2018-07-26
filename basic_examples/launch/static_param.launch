@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <!-- Parameters set in <launch> are set in the global namespace -->
+  <param name="p1" value="45.0" />
+
+  <node pkg="basic_examples" type="static_param_example" name="static_param_example" output="screen" >
+    <!-- Parameters set in <node> are set in node's private namespace -->
+    <param name="p3" value="567.0" />
+  </node>
+
+</launch>

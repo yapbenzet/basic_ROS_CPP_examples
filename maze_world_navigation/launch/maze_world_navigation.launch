@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<launch>
+
+  <node pkg="move_base" type="move_base" name="move_base" >
+    <rosparam file="$(find maze_world_navigation)/yaml/move_base_params.yaml" />
+    <rosparam ns="global_costmap" file="$(find maze_world_navigation)/yaml/global_costmap_params.yaml" />
+    <rosparam ns="local_costmap" file="$(find maze_world_navigation)/yaml/local_costmap_params.yaml" />
+    <rosparam ns="NavfnROS" file="$(find maze_world_navigation)/yaml/global_planner_params.yaml" />
+    <rosparam ns="TrajectorPlannerROS" file="$(find maze_world_navigation)/yaml/local_planner_params.yaml" />
+
+    <remap from="cmd_vel" to="/roundbot/cmd_vel" />
+  </node>
+
+  <node ns="roundbot" pkg="roundbot_twist_controller" type="roundbot_twist_control" name="roundbot_twist_control" />
+
+  <node pkg="tf" type="static_transform_publisher" name="world_to_map" args="0 0 0 0 0 0 world map 30" />
+
+  <node pkg="rviz" type="rviz" name="maze_world_navigation_viz" args="-d $(find maze_world_navigation)/rviz/rviz_config.rviz" />
+
+</launch>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <node pkg="marker_example" type="marker_example" name="marker_example" />
+
+  <node pkg="tf" type="static_transform_publisher" name="map_to_frame1" args="2 2 0 0 0 0 map frame1 30" />
+
+  <node pkg="rviz" type="rviz" name="marker_example_viz" args="-d $(find marker_example)/rviz/marker_example.rviz" />
+
+</launch>

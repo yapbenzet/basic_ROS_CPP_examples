@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>maze_world_navigation</name>
+
+  <version>0.0.0</version>
+  <description>This is the description.</description>
+  <maintainer email="abc@xyz.com">ABC</maintainer>
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <export>
+  </export>
+</package>
